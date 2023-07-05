@@ -1,0 +1,444 @@
+@import url('./global.css');
+@import url('./footer.css');
+
+/*----------------- intro ---------------*/
+.intro{
+  position: relative;
+  padding: 300px 0 200px 0;
+}
+.hero-title h1{
+  text-align: center;
+}
+.hero-title p{
+  width: 70%;
+  padding-top: 26px;
+  margin: auto;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 30px;
+}
+.hero-btns{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+.mints-now-btn{
+  width: 250px;
+  height: 60px;
+  font-family: var(--primary-font-family);
+  font-size: 26px;
+  color: #025B6D;
+  background: var(--primary-color);
+  border-radius: 50px;
+  cursor: pointer;
+  margin: 0 10px;
+  transition: all 0.4s ease;
+}
+.mints-now-btn:hover{
+  background: transparent;
+  border: 3px solid #F1BD03;
+  color: #F1BD03;
+}
+.join-discord-btn{
+  width: 250px;
+  height: 60px;
+  font-family: var(--primary-font-family);
+  font-size: 26px;
+  color: #FFFFFF;
+  background: transparent;
+  border: 2px solid #FFFFFF;
+  border-radius: 50px;
+  cursor: pointer;
+  margin: 0 10px;
+  transition: all 0.4s ease;
+}
+.join-discord-btn:hover{
+  background: #FFFFFF;
+  color: #025B6D;
+}
+
+.hero-left-img{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.hero-left-img img{
+  width: 400px;
+}
+.hero-right-img{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.hero-right-img img{
+  width: 320px;
+}
+/*------------------  nft belts  --------------------*/
+.belt-box {
+  display: flex;
+}
+
+.belt-box .box-1 .img-1 img {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 20px;
+  border: 5px solid var(--primary-color);
+}
+
+.belt-box .box-1 .img-2 img {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 20px;
+  border: 5px solid var(--primary-color);
+}
+
+.belt-box .box-2 {
+  margin-top: 30px;
+}
+
+.belt-box .box-2 .img-1 img {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 20px;
+  border: 5px solid var(--primary-color);
+}
+
+.belt-box .box-2 .img-2 img {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 20px;
+  border: 5px solid var(--primary-color);
+}
+
+.overlay {
+  display: none;
+}
+/*------------------  Roadmap Section  --------------------*/
+
+.roadmap{
+  width: 100%;
+}
+.raodmap-content{
+  display: flex;
+  flex-direction: column;
+  gap: 100px 0;
+  padding: 150px 0;
+}
+.roadmap-step-wrapper{
+  position: relative;
+}
+.raodmap-step-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 100px 0;
+  position: relative;
+  padding: 50px 0;
+}
+.roadmap-shape-img{
+  position: absolute;
+  width: 300px;
+  height: 100%;
+  overflow: hidden;
+  top: 0;
+  left: calc(50% - 150px);
+}
+.roadmap-shape-img > img{
+  width: 100%;
+  height: 100%;
+}
+.raodmap-step{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 300px;
+}
+.raodmap-step:nth-child(even) > .step-col:nth-child(odd){
+  order: 1;
+}
+.step-col{
+  flex-basis: calc(50% - 150px);
+}
+.raodmap-step:nth-child(odd) > .step-col:nth-child(odd){
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.raodmap-step:nth-child(even) > .step-col:nth-child(odd){
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+}
+.raodmap-step-img{
+  width: 200px;
+}
+.raodmap-step-img > img{
+  width: 100%;
+}
+.raodmap-step-title{
+  font-family: "Luckiest Guy";
+  font-size: 60px;
+  color: #fff;
+  font-weight: 400;
+}
+.step-col{
+  font-family: "Raleway";
+  display: flex;
+  gap: 0 150px;
+}
+.percent-box{
+  display: flex;
+  gap: 0 50px;
+  align-items: center;
+}
+.raodmap-step:nth-child(even) > .step-col:nth-child(odd) > .percent-box{
+  flex-direction: row-reverse;
+}
+.percent-box span{
+  font-size: 35px;
+  color: #fff;
+}
+.fill-box{
+  width: 10px;
+  height: 180px;
+  background: #fff;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+.fill-outer{
+  width: 100%;
+  height: 50%;
+  background: #fff;
+}
+.fill-inner1{
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  background: red;
+  bottom: 0;
+  left: 0;
+  animation: fill-1 5s infinite;
+}
+.fill-inner2{
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  background: red;
+  bottom: 0;
+  left: 0;
+  animation: fill-2 5s infinite;
+}
+.fill-inner3{
+  position: absolute;
+  width: 100%;
+  height: 70%;
+  background: red;
+  bottom: 0;
+  left: 0;
+  animation: fill-3 5s infinite;
+}
+.fill-inner4{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: red;
+  bottom: 0;
+  left: 0;
+  animation: fill-4 5s infinite;
+}
+@keyframes fill-1 {
+  0%   {height: 30%;}
+  50%  {height: 0%;}
+  
+}
+@keyframes fill-2 {
+  0%   {height: 50%;}
+  50%  {height: 0%;}
+  
+}
+@keyframes fill-3 {
+  0%   {height: 70%;}
+  50%  {height: 0%;}
+  
+}
+@keyframes fill-4 {
+  0%   {height: 100%;}
+  50%  {height: 0%;}
+  
+}
+.step-col:nth-child(2) > span{
+  color: #fff;
+  position: relative;
+  font-size: 20px;
+  line-height: 30px;
+
+}
+.step-col:nth-child(2){
+  display: flex;
+  flex-direction: column;
+}
+.step-col:nth-child(2) > span::after{
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #F1BD03;
+  border-radius: 100%;
+  left: -15px;
+  top: 10px;
+}
+/*------------------  Team Section  --------------------*/
+.team{
+  padding: 50px 0;
+}
+.team-title h1{
+  text-align: center;
+}
+.all-members{
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  /* grid-gap: 100px; */
+}
+.team-member{
+  /* position: relative; */
+  width: 300px;
+  /* weight: 300px; */
+  height: 758px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  border: 4px solid #FFFFFF;
+  padding: 15px;
+  border-radius: 20px;
+}
+.member-img img{
+  /* border-radius: 10px; */
+  width: 250px;
+  height: 250px;
+  margin-bottom: 15px;
+}
+.member-name{
+  background: #025B6D;
+  width: 200px;
+  height: 60px;
+  border: 3px solid #FFFFFF;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.member-name h2{
+  font-size: 26px;
+  color: #FFFFFF;
+  font-family: var(--primary-font-family);
+  font-weight: 100;
+}
+.member-description p{
+  text-align: center;
+  font-family: var(--secondary-font-family);
+  color: #FFFFFF;
+  padding: 20px 0 0 0;
+}
+/*----------- FAQ Section  ---------------*/
+.faq {
+  width: 100%;
+  padding: 50px 0px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.faq .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.faq .container h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: var(--primary-font-family);
+  font-size: 80px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.faq .container .questions-answers {
+  width: 100%;
+  z-index: 100;
+}
+
+.faq .container .questions-answers .question-answer {
+  width: 100%;
+  margin-bottom: 30px;
+  background: #FFFFFF;
+  border-radius: 20px;
+
+}
+
+.faq .container .questions-answers .question-answer:last-child {
+  margin-bottom: 0px;
+}
+
+.faq .container .questions-answers .question-answer .question {
+  position: relative;
+  padding: 30px 50px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.faq .container .questions-answers .question-answer .question img {
+  position: absolute;
+  top: 50%;
+  left: -25px;
+  transform: translateY(-50%);
+  width: 150px;
+}
+
+.faq .container .questions-answers .question-answer .question p {
+  font-size: 30px;
+  font-weight: 500;
+  color: #3A9CD1;
+  font-family: var(--primary-font-family);
+  text-transform: uppercase;
+}
+
+.faq .container .questions-answers .question-answer .question svg {
+  min-width: 30px;
+  transform: rotate(180deg);
+  transition: all 0.3s ease;
+}
+
+.faq .container .questions-answers .question-answer .answer {
+  /* margin-top: 50px; */
+  font-size: 24px;
+  color: #3A9CD1;
+  display: none;
+  padding: 0px 50px 20px 50px;
+  transition: all 0.3s ease;
+}
+
+.faq .container .questions-answers .question-answer.active .answer {
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.faq .container .questions-answers .question-answer.active .question svg {
+  transform: rotate(0deg);
+}
+

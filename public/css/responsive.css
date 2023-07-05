@@ -1,0 +1,383 @@
+/*------------------  Intro belts  --------------------*/
+@media only screen and (max-width:1240px) {
+    .intro {
+        position: relative;
+        padding: 100px 0 50px 0;
+    }
+
+    .hero-title h1 {
+        font-size: 60px;
+    }
+
+    .hero-left-img img {
+        width: 150px;
+    }
+
+    .hero-right-img img {
+        width: 120px;
+    }
+}
+@media only screen and (max-width:770px) {
+    .intro {
+        position: relative;
+        padding: 100px 0 50px 0;
+    }
+
+    .hero-title h1 {
+        font-size: 50px;
+    }
+    .hero-title p{
+        width: 100%;
+        padding-top: 26px;
+        margin: auto;
+        text-align: center;
+        color: #FFFFFF;
+        font-size: 25px;
+      }
+    .hero-left-img img {
+        width: 150px;
+    }
+
+    .hero-right-img img {
+        width: 120px;
+    }
+    .hero-btns{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 0;
+      }
+      .mints-now-btn{
+        width: 200px;
+        height: 50px;
+        font-family: var(--primary-font-family);
+        font-size: 20px;
+        color: #025B6D;
+        background: var(--primary-color);
+        border-radius: 50px;
+        cursor: pointer;
+        margin: 0 0 20px 0;
+      }
+      .join-discord-btn{
+        width: 200px;
+        height: 50px;
+        font-family: var(--primary-font-family);
+        font-size: 20px;
+        color: #FFFFFF;
+        background: transparent;
+        border: 2px solid #FFFFFF;
+        border-radius: 50px;
+        cursor: pointer;
+        margin: 0px 0px;
+      }
+
+}
+@media only screen and (max-width:500px) {
+    .intro {
+        position: relative;
+        padding: 100px 0 50px 0;
+    }
+
+    .hero-title h1 {
+        font-size: 40px;
+    }
+    .hero-title p{
+        width: 100%;
+        padding-top: 26px;
+        margin: auto;
+        text-align: center;
+        color: #FFFFFF;
+        font-size: 18px;
+      }
+    .hero-left-img img {
+        width: 100px;
+    }
+
+    .hero-right-img img {
+        width: 80px;
+    }
+}
+/*------------------  nft belts  --------------------*/
+
+@media only screen and (max-width:1240px) {
+    .belt-box .box-1 .img-1 img {
+        width: 70px;
+        height: 70px;
+        margin: 3px;
+        border-radius: 10px;
+        border: 2px solid var(--primary-color);
+    }
+
+    .belt-box .box-1 .img-2 img {
+        width: 70px;
+        height: 70px;
+        margin: 3px;
+        border-radius: 10px;
+        border: 2px solid var(--primary-color);
+    }
+
+    .belt-box .box-2 {
+        margin-top: 15px;
+    }
+
+    .belt-box .box-2 .img-1 img {
+        width: 70px;
+        height: 70px;
+        margin: 3px;
+        border-radius: 10px;
+        border: 2px solid var(--primary-color);
+    }
+
+    .belt-box .box-2 .img-2 img {
+        width: 70px;
+        height: 70px;
+        margin: 3px;
+        border-radius: 10px;
+        border: 2px solid var(--primary-color);
+    }
+
+}
+
+
+/*--------------- Roadmap Section  -------------*/
+
+@media(max-width: 1600px) {
+    .roadmap-shape-img {
+        width: 17vw;
+        left: calc(50% - 8.5vw);
+    }
+
+    .step-col {
+        flex-basis: calc(50% - 8.5vw);
+    }
+}
+
+@media(max-width: 1450px) {
+    .raodmap-step-img {
+        width: 170px;
+    }
+
+    .raodmap-step-title {
+        font-size: 50px;
+    }
+
+    .step-col {
+        gap: 0 100px;
+    }
+
+    .percent-box {
+        gap: 0 30px;
+    }
+
+    .percent-box span {
+        font-size: 30px;
+    }
+
+    .step-col:nth-child(2)>span {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .fill-box {
+        height: 160px;
+    }
+}
+
+@media only screen and (max-width:1240px) {}
+
+@media(max-width: 1300px) {
+    .raodmap-step-img {
+        width: 150px;
+    }
+
+    .raodmap-step-title {
+        font-size: 45px;
+    }
+
+    .step-col {
+        gap: 0 70px;
+    }
+
+    .percent-box span {
+        font-size: 27px;
+    }
+
+    .step-col:nth-child(2)>span {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .fill-box {
+        height: 140px;
+    }
+
+    .step-col:nth-child(2)>span::after {
+        width: 8px;
+        height: 8px;
+        top: 7px;
+    }
+}
+
+@media(max-width: 1150px) {
+    .raodmap-step-img {
+        width: 130px;
+    }
+
+    .raodmap-step-title {
+        font-size: 35px;
+    }
+
+    .step-col {
+        gap: 0 50px;
+    }
+
+    .percent-box span {
+        font-size: 25px;
+    }
+
+    .step-col:nth-child(2)>span {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .fill-box {
+        width: 8px;
+        height: 120px;
+    }
+
+    .step-col:nth-child(2)>span::after {
+        width: 6px;
+        height: 6px;
+        left: -10px;
+    }
+}
+
+@media(max-width: 1000px) {
+    .roadmap-shape-img {
+        display: none;
+    }
+
+    .step-col {
+        flex-basis: 50%;
+    }
+
+    .raodmap-step {
+        gap: 0 100px;
+    }
+}
+
+@media(max-width: 770px) {
+    .raodmap-step-img {
+        width: 110px;
+    }
+
+    .raodmap-step-title {
+        font-size: 30px;
+    }
+
+    .step-col {
+        gap: 0 40px;
+    }
+
+    .percent-box span {
+        font-size: 20px;
+    }
+
+    .step-col:nth-child(2)>span {
+        font-size: 13px;
+    }
+
+    .fill-box {
+        width: 6px;
+        height: 100px;
+    }
+
+    .raodmap-step {
+        gap: 0 60px;
+    }
+
+    .raodmap-content {
+        gap: 50px 0;
+        padding: 100px 0;
+    }
+}
+
+@media(max-width: 600px) {
+    .raodmap-content{
+        display: flex;
+        flex-direction: column;
+        gap: 10px 0;
+        padding: 50px 0 0 0;
+      }
+    .raodmap-step:nth-child(even)>.step-col:nth-child(odd) {
+        order: 0;
+    }
+
+    .step-col {
+        flex-basis: 80%;
+    }
+
+    .raodmap-step {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px 0;
+    }
+
+    .step-col:nth-child(odd) {
+        justify-content: center !important;
+    }
+}
+
+/*--------------- Team Section  -------------*/
+
+@media only screen and (max-width:1240px) {
+    .team-title h1 {
+        font-size: 30px;
+    }
+
+    .member-name h2 {
+        font-size: 20px;
+        color: #FFFFFF;
+        font-family: var(--primary-font-family);
+    }
+}
+
+@media only screen and (max-width:915px) {
+    .all-members {
+        padding-top: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .team-member{
+        margin-top: 50px;
+        position: relative;
+      }
+
+}
+
+/*--------------- FAQs Section  -------------*/
+
+@media only screen and (max-width:900px) {
+    .faq .container h1 {
+        font-size: 30px;
+    }
+
+}
+
+@media only screen and (max-width:520px) {
+
+    .faq .container .questions-answers .question-answer .question p {
+        font-size: 16px;
+    }
+
+    .faq .container .questions-answers .question-answer .answer {
+        font-size: 16px;
+    }
+
+
+
+}
