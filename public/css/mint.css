@@ -2,23 +2,27 @@
 
 .mint{
     position: relative;
-    padding: 200px 0 50px 0;
+    padding: 150px 0 100px 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .mint-box{
-    background: #106271;
+    background: #07252b;
     border: 8px solid #fff;
     border-radius: 10px;
     padding: 30px;
     width: 600px;
+    
+    margin: 10px;
 }
 .mint-box h1{
     font-family: var(--primary-font-family);
     text-align: center;
     margin-bottom: 30px;
     font-size: 50px;
+    font-weight: 900;
+    line-height: 60px;
 }
 .price{
     border: 3px solid #FFFFFF;
@@ -36,8 +40,10 @@
     font-family: var(--secondary-font-family);
 }
 .price-right h3{
+    font-size: 24px;
     color: #FFFFFF;
     font-family: var(--secondary-font-family);
+    margin-top: 10px;
 }
 .box{
     border: 3px solid #FFFFFF;
@@ -51,6 +57,7 @@
 .count{
     display: flex;
     align-items: center;
+    gap: 15px;
 }
 .count button img{
     width: 30px;
@@ -67,6 +74,7 @@
     font-family: var(--primary-font-family);
 }
 .max h2{
+    font-size: 24px;
     color: #FFFFFF;
     font-family: var(--secondary-font-family);
 }
@@ -81,7 +89,7 @@
     font-size: 20px;
     width: 200px;
     height: 50px;
-    background: var(--primary-color);
+    background: linear-gradient(90deg, #f13737 0%, #810202 100%);
     border: 3px solid #FFFFFF;
     transform: rotate(0deg) skew(334deg);
     box-shadow: rgba(255, 255, 255, 0.5) 0px 1px 4px, rgba(255, 255, 255, 0.5) 0px 0px 0px 3px;
@@ -95,12 +103,12 @@
 }
 .minted{
     border: 3px solid #0f0f0f;
-    padding: 10px;
+    padding: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
     background: #FFFFFF;
-    border-radius: 10px;
+    border-radius: 7px;
 }
 
 .minted h2{
@@ -119,5 +127,17 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .mint-box {
+        border: 5px solid #fff;
+        padding: 20px;
+    }
+    .mint-box h1 {
+        margin-bottom: 20px;
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .max h2 {
+        font-size: 18px;
     }
 }

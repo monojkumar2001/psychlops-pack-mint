@@ -1,12 +1,8 @@
 import React from "react";
-
-import { Link } from "react-router-dom";
-
 import { useEffect, useState } from "react";
 import Web3 from "web3";
 import Web3Modal from "web3modal";
 import { useHistory, useLocation } from "react-router-dom";
-import Marquee from "react-fast-marquee";
 function Mint() {
 
   const [pagelocation, setPageLocation] = useState(useLocation().pathname);
@@ -640,7 +636,7 @@ function Mint() {
         <h1>Mint Now</h1>
         <div className="price">
           <div className="price-img">
-            <img src="./images/belt-4.png" alt="Mint Images" />
+            <img src="./images/mint-img.png" alt="Mint Images" />
           </div>
           <div className="price-right">
             <p>Mint Price</p>
@@ -656,7 +652,7 @@ function Mint() {
                 }
               }}
             >
-              <img src="./images/mint-minus.png" alt="" />
+              <img src="./images/mint-minus.svg" alt="" />
 
             </button>
             <h2>{value}</h2>
@@ -667,11 +663,19 @@ function Mint() {
                 }
               }}
             >
-              <img src="./images/mint-plus.png" alt="" />
+              <img src="./images/mint-plus.svg" alt="" />
             </button>
           </div>
           <div className="max">
             <h2>10 MAX</h2>
+          </div>
+        </div>
+        <div className="box">
+          <div className="max">
+            <h2>Total</h2>
+          </div>
+          <div className="max">
+            <h2>0.25 ETH Each</h2>
           </div>
         </div>
 
