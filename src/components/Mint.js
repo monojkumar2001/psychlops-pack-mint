@@ -4,7 +4,7 @@ import Web3 from "web3";
 import Web3Modal from "web3modal";
 import { useHistory, useLocation } from "react-router-dom";
 function Mint() {
-
+const price=0.25;
   const [pagelocation, setPageLocation] = useState(useLocation().pathname);
   //totalMinted is the total amount of tokens minted
   const [totalMinted, setTotalMinted] = useState(0);
@@ -640,7 +640,7 @@ function Mint() {
           </div>
           <div className="price-right">
             <p>Mint Price</p>
-            <h3>0.25 ETH</h3>
+            <h3>{price} ETH</h3>
           </div>
         </div>
         <div className="box">
@@ -675,7 +675,7 @@ function Mint() {
             <h2>Total</h2>
           </div>
           <div className="max">
-            <h2>0.25 ETH Each</h2>
+            <h2>{value * price} ETH Each</h2>
           </div>
         </div>
 
